@@ -1,0 +1,20 @@
+body {
+    font-family:'ARIAL',sans-seriF;
+    background-color: antiquewhite;
+    color: ;
+}
+H1{
+    color: bisque;
+}
+A{
+    color: blanchedalmond;
+    text-decoration: none;
+
+}
+a:hover{
+    color: blue;
+}
+UL>li{
+    font-weight: bold;
+    
+}
