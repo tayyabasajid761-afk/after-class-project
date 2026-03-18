@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="MYJOIN"></p>
+    <p id="MYFIRSTPOP"></p>
+    <p id="MYSECONDPOP"></p>
+    <script>
+        var fruits = ["Banana","orange","Apple","mango"];
+        document.getElementById("MYJOIN").innerHTML =fruits.join("*");
+        document.getElementById("MYFIRSTPOP").innerHTML = fruits;fruits.pop();
+        document.getElementById("MYSECONDPOP").innerHTML = fruits;
+    </script>
+</body>
+</html>
