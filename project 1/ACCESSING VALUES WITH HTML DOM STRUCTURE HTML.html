@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="demo">DOM STRUCTURE</title>
+</head>
+<body>
+    <P>Adding js as seprate file and assigning value fron one node to other</P>
+    <button type="button" onclick="myfunction()">CLICK ME!</button>
+    <P id="result"></P>
+    <P id="result1"></P>
+    <script src="script.js">
+     function myfunction() {
+        document.getElementById("result").innerHTML =
+        document.getElementById("demo").firstChild.nodeValue;
+        document.getElementById("result1").innerHTML =
+        document.getElementById("demo").childNodes[0].nodeValue; 
+     }   
+    </script>
+</body>
+</html>
