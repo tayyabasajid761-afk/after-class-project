@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Class</h2>
+    
+    <script>
+
+        // Creating a class
+
+        class Student {
+
+            constructor(name, year) {
+
+                this.name = name;
+
+                this.year = year;
+
+            }
+
+            // Age method
+
+            age() {
+
+                let date = new Date();
+
+                return date.getFullYear() - this.year;
+
+            }
+
+        }
+
+        // Using the class with two objects
+
+        const student1 = new Student("Riya", 2014);
+
+        document.write("My name is " + student1.name + ". I was born in " + student1.year + ". And my age is " + student1.age());
+
+        document.write("<br>");
+
+
+        const student2 = new Student("Tina", 2018);
+
+        document.write("My name is " + student2.name + ". I was born in " + student2.year + ". And my age is " + student2.age());
+
+
+    </script>
+    
+    </body>
+    
+    </html>
+</body>
+</html>
